@@ -11,6 +11,24 @@ Turn approved product research and discovery artifacts — user interviews, data
 
 A PRD is a **handoff artifact**. It will be read by engineering, design, QA, marketing, and leadership. It needs to be concrete enough that an engineer can scope and build without playing detective, and tight enough that an exec can skim the top and understand what's being built and why.
 
+## Interaction contract (must do before drafting)
+
+Before drafting, always do the following in order:
+
+1. Ask whether the team uses a shared artifacts location for research and discovery.
+2. Gather available artifacts from the shared path (if provided) plus workspace/user-provided files.
+3. Ask up to four targeted clarifying questions if essential information is missing.
+4. Confirm output format (default `.docx`, unless user asks for another format).
+
+Do not draft the PRD until these steps are complete.
+
+## Decision logic
+
+- If the user provides a shared artifacts path/link, treat it as the primary source of truth.
+- If no shared path is used, continue with artifacts already attached or provided in the workspace/chat.
+- If core essentials are missing, ask focused clarification questions before drafting.
+- If essentials are sufficiently defined, proceed to drafting without unnecessary extra turns.
+
 ## Step 1 — Gather inputs and close gaps *before* drafting
 
 A good PRD reflects real discovery work, not guesses. Before writing anything:
@@ -29,7 +47,7 @@ A good PRD reflects real discovery work, not guesses. Before writing anything:
 
    Keep the first round of questions to at most four. If something critical is still fuzzy after the first reply, ask one focused follow-up rather than piling on another long list.
 
-3. **Confirm output format.** The default output is a Word document (`.docx`) — most teams expect PRDs in Word. Only switch formats if the user asks for Markdown, Google Doc, Notion-ready markdown, or something else.
+4. **Confirm output format.** The default output is a Word document (`.docx`) — most teams expect PRDs in Word. Only switch formats if the user asks for Markdown, Google Doc, Notion-ready markdown, or something else.
 
 ## Step 2 — Produce the PRD
 

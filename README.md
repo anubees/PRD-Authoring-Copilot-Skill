@@ -1,38 +1,38 @@
 # PRD Authoring Copilot Skill
 
-This repository contains a project-local Cursor skill named `prd-authoring-copilot`.
+This repo contains the `prd-authoring-copilot` skill, project rule, and VSIX packaging so teams can install the same PRD behavior in Cursor.
 
-## Location
+## Edit here (source of truth)
 
-Skill files are stored at:
+- `.cursor/skills/prd-authoring-copilot/SKILL.md`
+- `.cursor/rules/prd.mdc`
+- `.cursor/skills/prd-authoring-copilot/templates/`
+- `.cursor/skills/prd-authoring-copilot/example_prompts.md`
+- `prds/PATTERNS.md` (living conventions; check `Recent additions`)
 
-`.cursor/skills/prd-authoring-copilot/`
+## Ship here (what goes in VSIX)
 
-## Included Files
+- `cursor-plugins/prd-authoring-copilot/`
+- `src/extension.ts`
+- `package.json`
+- `.vscodeignore`
 
-- `.cursor/skills/prd-authoring-copilot/SKILL.md`: Main skill instructions
-- `.cursor/skills/prd-authoring-copilot/reference.md`: Detailed quality and writing guidance
-- `.cursor/skills/prd-authoring-copilot/_examples/examples.md`: Input/output examples for PRDs and Jira epics
-- `.cursor/skills/prd-authoring-copilot/templates/prd-template.md`: Reusable PRD template
-- `.cursor/skills/prd-authoring-copilot/templates/jira-epic-template.md`: Reusable Jira epic template
-- `.cursor/rules/prd.mdc`: Project rule for PRD authoring behavior
+## Quick workflow
 
-## Local Development
+1. Update files in `.cursor/...` and `prds/PATTERNS.md`.
+2. Mirror shipped changes into `cursor-plugins/prd-authoring-copilot/...`.
+3. Build and install the VSIX to validate behavior.
 
-Use this repository to evolve the skill content, test prompting quality, and prepare packaging for a Cursor extension installer.
+## Build and install
 
-## Workflow Notes
+```bash
+npm install
+npm run package
+```
 
-- Primary authoring source of truth: the skill templates in `.cursor/skills/prd-authoring-copilot/templates/`
-- Markdown workflow: create PRDs at `prds/<initiative-slug>/PRD.md` when requested
-- Word workflow: when the user requests `.docx`, follow the `docx` skill path
+Artifact: `prd-authoring-copilot-skill-0.1.0.vsix`  
+Install: **Extensions → ... → Install from VSIX...**
 
-## Install Into Personal Skills (Optional)
+## Optional local-skill install (no VSIX)
 
-When ready to install manually, copy the folder:
-
-`.cursor/skills/prd-authoring-copilot`
-
-to:
-
-`~/.cursor/skills/prd-authoring-copilot`
+Copy `.cursor/skills/prd-authoring-copilot` to `~/.cursor/skills/prd-authoring-copilot`.

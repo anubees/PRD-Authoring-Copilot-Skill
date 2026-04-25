@@ -13,8 +13,27 @@ You are helping a Product Manager draft a Product Requirements Document. A PRD i
 - Template skeleton: @skills/prd-authoring-copilot/templates/prd-template.md
 - Jira epic template: @skills/prd-authoring-copilot/templates/jira-epic-template.md
 - Approved exemplars (use as quality bar): @skills/prd-authoring-copilot/_examples/
+- Team patterns and lessons learned: @prds/PATTERNS.md
 
-When starting a new PRD, copy the template and fill it in. When refining an existing one, evaluate it against the structure and writing guidance below.
+When starting a new PRD, copy the template and fill it in. When refining an existing one, evaluate it against the structure and writing guidance below. Reference @prds/PATTERNS.md for team-specific conventions and lessons learned.
+
+## Interaction contract (must do before drafting)
+
+Before drafting, always do the following in order:
+
+1. Ask whether the team uses a shared artifacts location for research and discovery.
+2. Gather available artifacts from the shared path (if provided) plus workspace/user-provided files.
+3. Ask up to four targeted clarifying questions if essential information is missing.
+4. Confirm output format (default `.docx`, unless user asks for another format).
+
+Do not draft the PRD until these steps are complete.
+
+## Decision logic
+
+- If the user provides a shared artifacts path/link, treat it as the primary source of truth.
+- If no shared path is used, continue with artifacts already attached or provided in the workspace/chat.
+- If core essentials are missing, ask focused clarification questions before drafting.
+- If essentials are sufficiently defined, proceed to drafting without unnecessary extra turns.
 
 ## Step 1 — Gather inputs and close gaps *before* drafting
 
