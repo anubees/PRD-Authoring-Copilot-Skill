@@ -1,3 +1,6 @@
 node_modules/
 dist/
 *.vsix
+cursor-plugins/prd-authoring-copilot/prds/**
+cursor-plugins/prd-authoring-copilot/rules/**
+cursor-plugins/prd-authoring-copilot/skills/**

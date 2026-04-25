@@ -14,14 +14,15 @@ This repo contains the `prd-authoring-copilot` skill, project rule, and VSIX pac
 
 - `cursor-plugins/prd-authoring-copilot/`
 - `src/extension.ts`
+- `scripts/sync-plugin.mjs`
 - `package.json`
 - `.vscodeignore`
 
 ## Quick workflow
 
 1. Update files in `.cursor/...` and `prds/PATTERNS.md`.
-2. Mirror shipped changes into `cursor-plugins/prd-authoring-copilot/...`.
-3. Build and install the VSIX to validate behavior.
+2. Run `npm run package` (this auto-syncs source content into `cursor-plugins/...`).
+3. Install the VSIX to validate behavior.
 
 ## Build and install
 

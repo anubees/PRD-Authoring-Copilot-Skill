@@ -20,8 +20,9 @@
   ],
   "main": "./dist/extension.js",
   "scripts": {
+    "sync:plugin": "node ./scripts/sync-plugin.mjs",
     "compile": "tsc -p .",
-    "prepackage": "npm run compile",
+    "prepackage": "npm run sync:plugin && npm run compile",
     "package": "vsce package"
   },
   "devDependencies": {
