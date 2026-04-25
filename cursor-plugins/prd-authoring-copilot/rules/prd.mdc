@@ -35,6 +35,15 @@ Do not draft the PRD until these steps are complete.
 - If core essentials are missing, ask focused clarification questions before drafting.
 - If essentials are sufficiently defined, proceed to drafting without unnecessary extra turns.
 
+## Continuous learning update (after drafting or review)
+
+After completing a PRD draft or PRD review task, scan the most recent user prompts and feedback for reusable team conventions. If you find a new lesson that is likely to matter in future PRDs, update `prds/PATTERNS.md`:
+
+1. Add a concise dated bullet under `Recent additions`.
+2. Keep wording actionable and specific (something a PM can apply immediately).
+3. Avoid duplicates; merge with an existing pattern when equivalent.
+4. If an item is stable after 1-2 weeks, move it to `Accumulated patterns`.
+
 ## Step 1 — Gather inputs and close gaps *before* drafting
 
 A good PRD reflects real discovery work, not guesses. Before writing:

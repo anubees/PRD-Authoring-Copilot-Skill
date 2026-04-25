@@ -35,6 +35,7 @@ Use this living document to capture team-specific PRD conventions that are not o
 
 ## How to update this file
 
+- Use the most recent user prompts and feedback as the primary input for new entries.
 - Add new items to `Recent additions` first.
 - After 1-2 weeks, roll stable items into `Accumulated patterns`.
 - Keep entries concrete, with direct wording PMs can apply in the next draft.
