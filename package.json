@@ -1,0 +1,33 @@
+{
+  "name": "prd-authoring-copilot-skill",
+  "displayName": "PRD Authoring Copilot Skill",
+  "description": "Installs the PRD authoring skill and rule bundle for Cursor.",
+  "version": "0.1.0",
+  "publisher": "samee",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anubees/PRD-Authoring-Copilot-Skill.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "scripts": {
+    "compile": "tsc -p .",
+    "prepackage": "npm run compile",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/vscode": "^1.90.0",
+    "@vscode/vsce": "^3.6.2",
+    "typescript": "^5.9.0"
+  }
+}

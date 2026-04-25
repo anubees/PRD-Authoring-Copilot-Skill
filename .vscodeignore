@@ -1,0 +1,8 @@
+.git/**
+.gitignore
+.cursor/**
+agent-transcripts/**
+**/*.vsix
+terminals/**
+src/**
+tsconfig.json
