@@ -12,7 +12,7 @@ This repo contains the `prd-authoring-copilot` skill, project rule, and VSIX pac
 
 ## Ship here (what goes in VSIX)
 
-- `cursor-plugins/prd-authoring-copilot/`
+- `cursor-plugins/prd-authoring-copilot/` (generated at package time; do not edit manually)
 - `src/extension.ts`
 - `scripts/sync-plugin.mjs`
 - `package.json`
@@ -23,6 +23,12 @@ This repo contains the `prd-authoring-copilot` skill, project rule, and VSIX pac
 1. Update files in `.cursor/...` and `prds/PATTERNS.md`.
 2. Run `npm run package` (this auto-syncs source content into `cursor-plugins/...`).
 3. Install the VSIX to validate behavior.
+
+## Important notes
+
+- Single source of truth is `.cursor/...` plus `prds/PATTERNS.md`.
+- `cursor-plugins/...` is build output used for packaging and can be safely regenerated.
+- If packaged content looks stale, run `npm run package` again to force re-sync.
 
 ## Build and install
 
