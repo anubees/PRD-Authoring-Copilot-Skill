@@ -7,9 +7,9 @@ description: Produces structured PRDs and Jira-ready epics from approved researc
 
 ## Purpose
 
-Turn approved product research and discovery artifacts — user interviews, data analyses, competitive scans, prototypes, design mocks, stakeholder input — into a comprehensive, engineering-ready Product Requirements Document.
+Turn approved product research and discovery artifacts — market and segment research, data analyses, competitive scans, prototypes, design mocks, stakeholder input — into a comprehensive, engineering-ready Product Requirements Document.
 
-A PRD is a **handoff artifact**. It will be read by engineering, design, QA, marketing, and leadership. It needs to be concrete enough that an engineer can scope and build without playing detective, and tight enough that an exec can skim the top and understand what's being built and why.
+A PRD is a **handoff artifact**. It will be read by engineering, design, QA, segment, marketing, and leadership. It needs to be concrete enough that an engineer can scope and build without playing detective, and tight enough that an exec can skim the top and understand what's being built and why.
 
 ## Interaction contract (must do before drafting)
 
